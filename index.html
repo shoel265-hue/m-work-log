@@ -91,10 +91,13 @@
         .approval-td:hover .sign-delete-btn.has-image { display: flex; }
         .sign-delete-btn:hover { background: #a30000; }
         .approval-header-side { writing-mode: vertical-rl; letter-spacing: 6px; padding: 0 10px; background-color: #fff !important; color: #333 !important; font-weight: bold; font-size: 13px; border: 1px solid #dcdcdc; }
-        .worker-table input[type="text"] { border: 1px solid #ccc; border-radius: 2px; padding: 2px 4px; text-align: center; width: 90%; height: 22px; background: #fff; }
-        .worker-table td { padding: 3px; height: 28px; }
-        .worker-table select { border: 1px solid #ccc; border-radius: 2px; width: 90%; height: 22px; text-align-last: center; background: #fff; }
+        
+        /* 🛠️ 성명 입력 칸 여백 및 폭 최적화 (글자 잘림 방지) */
+        .worker-table input[type="text"] { border: 1px solid #ccc; border-radius: 2px; padding: 2px 2px; text-align: center; width: 99%; height: 22px; background: #fff; }
+        .worker-table td { padding: 3px 2px; height: 28px; vertical-align: middle; }
+        .worker-table select { border: 1px solid #ccc; border-radius: 2px; width: 95%; height: 22px; text-align-last: center; background: #fff; }
         .worker-table td.no-input { padding: 4px; background-color: #f5f5f5; }
+
         .work-log-box { background-color: #fbf7e8; border: 1px solid #e2d9c2; padding: 12px; margin-top: 5px; margin-bottom: 0; display: flex; gap: 15px; align-items: stretch; page-break-inside: auto; break-inside: auto; }
         .work-log-title { font-weight: bold; width: 100px; flex-shrink: 0; padding-top: 3px; }
         .work-log-textarea, .work-log-div { width: 100%; min-height: 120px; background-color: #fff; border: 1px solid #d3cbb6; line-height: 1.6; padding: 8px; white-space: pre-wrap; word-break: break-all; }
